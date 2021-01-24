@@ -1,0 +1,12 @@
+function s = mergesort(a)
+    
+    n = length(a);
+    
+    if n > 1
+        
+        s = merge(a(1:floor(n/2),a(floor(n/2)+1:end));
+    end
+end
+
+function mer
+
