@@ -27,8 +27,11 @@ GitHub Repo: \url{https://github.com/sivaprakasaman/Numerical_Methods_BME/}
 
 \section{Divide-and-Conquer for Integer Multiplication}
 
+\newpage
 \section{Sorting Algorithms}
 
+\large\textbf{Note: } My typset algorithms are \textit{zero-based}-- they assume indexing starts at zero, not the case in Matlab.
+\vspace{6pt}
 \hrule
 \vspace{6pt}
 \large\textbf{Bubble Sort:} Typset Algorithm. Worst/Average Case = $O(n^2)$, Best Case = $O(n)$ 
@@ -38,18 +41,22 @@ GitHub Repo: \url{https://github.com/sivaprakasaman/Numerical_Methods_BME/}
 \begin{algorithm}[H]
 \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
 
-\underline{function bubblesort}($a[1,...,l]$)
+\underline{function bubbleSort}($a[1,...,k]$)
 
 \vspace{6pt}
 \Input{An unsorted array, $a$}
 \Output{The sorted array}
 \BlankLine
-\While{not swapped}{
+\emph{Iterate through each element $i$ in $a$, swapping it with the element prior if element i-1 is greater than element i}
+\BlankLine
+swapped = \textbf{true}\;
+\BlankLine
+\While{swapped}{
 	\BlankLine
 	swapped = \textbf{false}\;
-	\For{$i\leftarrow$ 1 \KwTo $l$-1}{
+	\For{$i\leftarrow$ 1 \KwTo $k$-1}{
 		\BlankLine
-		\If{$a[i-1]>a[i]$}{swap($a[i-1], a[i]$)\;
+		\If{$a[i-1]>a[i]$}{swap: $a[i-1] \leftrightarrow a[i]$\;
 		swapped = \textbf{true}\;}
 		
 	
@@ -57,6 +64,74 @@ GitHub Repo: \url{https://github.com/sivaprakasaman/Numerical_Methods_BME/}
 
 }
 \vspace{6pt}
+\end{algorithm}
+
+\hrule
+\vspace{6pt}
+\large\textbf{Insertion Sort:} Typset Algorithm. Worst/Average Case = $O(n^2)$, Best Case = $O(n)$ 
+\vspace{6pt}
+\hrule
+
+\begin{algorithm}[H]
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+\underline{function insertionSort}($a[1,...,k]$)
+
+\Input{An unsorted array, $a$}
+\Output{The sorted array}
+\vspace{6pt}
+
+\emph{Incrementally traverse through each element $i$ in $a$, sliding $a[i]$ left through the sorted array, until it is ranked appropriately}
+\vspace{6pt}\\
+$i$ = 1\;
+\vspace{6pt}
+
+\While{$i$ < $k$}{
+\vspace{6pt}
+	$j$ = $i$\;
+	\While{$j>0$ and $a[j-1]>a[j]$}{
+		\vspace{6pt}
+		swap: $a[j] \leftrightarrow a[j-1]$\;
+		$j\leftarrow$ j - 1\;
+	}	
+	$i\leftarrow$ $i$ + 1\;
+}
+\end{algorithm}
+
+\newpage
+\vspace{6pt}
+\hrule
+\vspace{6pt}
+\large\textbf{Selection Sort:} Typset Algorithm. Worst/Average/Best Case = $O(n^2)$ 
+\vspace{6pt}
+\hrule
+
+\begin{algorithm}[H]
+\SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+\underline{function selectionSort}($a[1,...,k]$)
+
+\Input{An unsorted array, $a$}
+\Output{The sorted array}
+\vspace{6pt}
+
+\For{$i\leftarrow$ 0 \KwTo $k$-1}{
+	\vspace{6pt}
+	\emph{starting with element $i$, compare $i$ against elements ahead}	
+	
+	tempMin = $i$\;	
+	
+	\BlankLine
+	\For{$j\leftarrow i + 1$ \KwTo $k$}{
+		\If{$a[j] < a[$tempMin$]$}{			
+			tempMin = $j$\;
+		}	
+	}
+	\vspace{6pt}
+	\If{tempMin does not equal $i$}{
+		swap: $a[i] \leftrightarrow a[$tempMin$]$\;
+	}
+}
+
+
 \end{algorithm}
 
 
