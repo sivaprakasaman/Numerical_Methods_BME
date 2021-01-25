@@ -1,3 +1,7 @@
+% Andrew Sivaprakasam 
+% BME 695- Numerical Methods
+% Warm-up Assignment 1
+
 function s = mergesort(a)
     
     n = length(a);

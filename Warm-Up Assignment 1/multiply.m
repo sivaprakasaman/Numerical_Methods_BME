@@ -1,3 +1,7 @@
+% Andrew Sivaprakasam 
+% BME 695- Numerical Methods
+% Warm-up Assignment 1
+
 function product = multiply(x,y)
 %Divide and Conquer aproach to int multiplication
 %x and y in binary
