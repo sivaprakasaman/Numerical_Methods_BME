@@ -2,6 +2,8 @@
 % BME 695- Numerical Methods
 % Warm-up Assignment 1
 
+%Iterate through each element i in a, swapping it with the element prior if element i-1 is greater than element i
+
 function s = bubblesort(a)
 
 n = length(a);

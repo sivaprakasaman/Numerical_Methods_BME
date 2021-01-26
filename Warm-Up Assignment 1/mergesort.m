@@ -32,10 +32,10 @@ end
 
 if arr1(1)<=arr2(1)
     m = merge(arr1(2:len1),arr2);
-    s = [arr1(1), m];
+    s = [arr1(1); m];
 else 
     m = merge(arr1,arr2(2:len2));
-    s = [arr2(1), m];
+    s = [arr2(1); m];
 end
 
 end
