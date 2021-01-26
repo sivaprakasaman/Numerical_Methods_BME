@@ -14,13 +14,14 @@ y = dec2bin(bin2dec(y),n);
     if n == 1
        product = bin2dec(x)*bin2dec(y);
     else
-        m = n/2;
+        m = n/2
 % 
 %         x_R = x((ceil(m)+1):end)
 %         x_L = x(1:floor(m))
-
+        x
+        y
         x_L = x(1:ceil(m))
-        x_R = x((ceil(m)+1):n)
+        x_R = x((ceil(m)+1):end)
         
 
 %         y_R = y((ceil(m)+1):end);
@@ -28,7 +29,7 @@ y = dec2bin(bin2dec(y),n);
 %         
                 
         y_L = y(1:ceil(m))
-        y_R = y((ceil(m)+1):n)
+        y_R = y((ceil(m)+1):end)
      
         P_1 = bin2dec(multiply(x_L, y_L))        
         %disp('P1_called')

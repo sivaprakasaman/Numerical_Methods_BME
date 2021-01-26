@@ -5,8 +5,8 @@ close all
 clear 
 
 load('arrays_to_sort.mat');
-trials = 10;
-dims = [10, 20, 30, 50, 100];
+trials = 10; 
+dims = [10, 20, 30, 50, 100, 500, 1000];
 
 merge_times = zeros(trials, length(dims));
 bubble_times = zeros(trials, length(dims));
@@ -26,6 +26,10 @@ for i = 1:length(dims)
             array = fifty_dim;
         case 100
             array = hund_dim;
+        case 500 
+            array = randi(100,500,10);
+        case 1000
+            array = randi(100,1000,10);
     end
     
     for j = 1:trials
@@ -35,10 +39,6 @@ for i = 1:length(dims)
         tic
         bubblesort(to_sort);
         bubble_times(j,i) = toc;
-
-        tic
-        mergesort(to_sort);
-        merge_times(j,i) = toc;
         
         tic
         insertionsort(to_sort);
@@ -47,6 +47,10 @@ for i = 1:length(dims)
         tic
         selectionsort(to_sort);
         selection_times(j,i) = toc;
+        
+        tic
+        mergesort(to_sort);
+        merge_times(j,i) = toc;
                        
     end
 
@@ -61,37 +65,28 @@ stds = std(merge_times);
 
 errorbar(dims, means, stds,'LineWidth',1.5);
 
-xticks([0,dims,110])
-xlim([0,110])
-
 means = mean(bubble_times);
 stds = std(bubble_times);
 
 errorbar(dims, means, stds,'LineWidth',1.5);
-
-xticks([0,dims,110])
-xlim([0,110])
-
 
 means = mean(selection_times);
 stds = std(selection_times);
 
 errorbar(dims, means, stds,'LineWidth',1.5);
 
-xticks([0,dims,110])
-xlim([0,110])
-
 means = mean(insertion_times);
 stds = std(insertion_times);
 
 errorbar(dims, means, stds,'LineWidth',1.5);
 
-xticks([0,dims,110])
-xlim([0,110])
-
+set(gca,'XTick',dims)
+set(gca,'XTickLabel',dims)
+set(gca,'XScale','log')
 hold off
 
-legend('MergeSort', 'BubbleSort', 'SelectionSort', 'InsertionSort');
+legend('MergeSort', 'BubbleSort', 'SelectionSort', 'InsertionSort','Location','Northwest');
 xlabel('Dimension')
 ylabel('Time (s)')
+set(gca,'FontSize',12)
 
