@@ -1,3 +1,7 @@
+% Andrew Sivaprakasam
+% Numerical Methods 
+% Warm-Up Assignment 2
+
 function root = findroot_bisect(f,x_l,x_u,epsilon)
 
 error = inf;

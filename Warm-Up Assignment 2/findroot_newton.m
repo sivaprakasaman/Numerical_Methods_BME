@@ -1,3 +1,7 @@
+% Andrew Sivaprakasam
+% Numerical Methods 
+% Warm-Up Assignment 2
+
 function [root,x1,error] = findroot_newton(f,x0,epsilon)
 
 syms x
@@ -16,7 +20,8 @@ while(error>epsilon)
     x0 = x1(i);
 end
 
-root = x1;
-
+root = x1(i);
+x1 = x1';
+error = error';
 end
 

@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.10)  7 FEB 2021 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.5)  8 FEB 2021 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **warmup_2_writeup.tex
 (./warmup_2_writeup.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-07-17>
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -20,22 +20,22 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
 \big@size=\dimen134
 )
-\c@part=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen135
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
@@ -80,7 +80,7 @@ Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
+\KV@toks@=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
@@ -108,16 +108,16 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+Package: iftex 2019/11/07 v1.0c TeX engine tests
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
 (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -149,11 +149,11 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen138
-\Hy@linkcounter=\count176
-\Hy@pagecounter=\count177
+\Hy@linkcounter=\count175
+\Hy@pagecounter=\count176
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -163,21 +163,22 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count178
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing OFF on input line 4484.
+\Hy@SavedSpaceFactor=\count177
+\pdfmajorversion=\count178
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
+Package hyperref Info: Bookmarks ON on input line 4800.
 \c@Hy@tempcnt=\count179
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5076.
+LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen139
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
@@ -190,15 +191,15 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 \Fld@menulength=\count180
 \Field@Width=\dimen140
 \Fld@charsize=\dimen141
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing OFF on input line 6362.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
 
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
@@ -210,7 +211,7 @@ Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
@@ -240,7 +241,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
+\@emptytoks=\toks17
 \ex@=\dimen142
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -270,21 +271,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip17
 \c@parentequation=\count193
 \dspbrk@lvl=\count194
-\tag@help=\toks19
+\tag@help=\toks18
 \row@=\count195
 \column@=\count196
 \maxfields@=\count197
-\andhelp@=\toks20
+\andhelp@=\toks19
 \eqnshift@=\dimen145
 \alignsep@=\dimen146
 \tagshift@=\dimen147
 \tagwidth@=\dimen148
 \totwidth@=\dimen149
 \lineht@=\dimen150
-\@envbody=\toks21
+\@envbody=\toks20
 \multlinegap=\skip51
 \multlinetaggap=\skip52
-\mathdisplay@stack=\toks22
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -331,12 +332,12 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen151
 \ar@mcellbox=\box47
 \extrarowheight=\dimen152
-\NC@list=\toks23
+\NC@list=\toks22
 \extratabsurround=\skip53
 \backup@length=\skip54
 \ar@cellbox=\box48
 )
-\everycr=\toks24
+\everycr=\toks23
 \minrowclearance=\skip55
 )
 LaTeX Info: Redefining \color on input line 709.
@@ -368,13 +369,13 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen158
 \Gm@layouthoffset=\dimen159
 \Gm@layoutvoffset=\dimen160
-\Gm@dimlist=\toks25
+\Gm@dimlist=\toks24
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip56
 \enit@outerparindent=\dimen161
-\enit@toks=\toks26
+\enit@toks=\toks25
 \enit@inbox=\box49
 \enit@count@id=\count268
 \enitdp@description=\count269
@@ -387,8 +388,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks27
-\XKV@tempa@toks=\toks28
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
 )
 \XKV@depth=\count270
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -485,11 +486,15 @@ Package: relsize 2013/03/29 ver 4.1
 \algocf@algobox=\box59
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count277
 \l__pdf_internal_box=\box60
 )
-(./warmup_2_writeup.aux)
+(./warmup_2_writeup.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `warmup_2_writeup.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -520,12 +525,12 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \scratchbox=\box61
 \nofMPsegments=\count279
 \nofMParguments=\count280
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks28
 \MPscratchCnt=\count281
 \MPscratchDim=\dimen183
 \MPnumerator=\count282
 \makeMPintoPDFobject=\count283
-\everyMPtoPDFconversion=\toks30
+\everyMPtoPDFconversion=\toks29
 )
 \AtBeginShipoutBox=\box62
 Package hyperref Info: Link coloring OFF on input line 20.
@@ -640,17 +645,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
-<./Figures/pic_1.jpg, id=13, 2768.3425pt x 3104.59875pt>
+<./Figures/pic_1.jpg, id=21, 2768.3425pt x 3104.59875pt>
 File: ./Figures/pic_1.jpg Graphic file (type jpg)
 <use ./Figures/pic_1.jpg>
 Package pdftex.def Info: ./Figures/pic_1.jpg  used on input line 38.
 (pdftex.def)             Requested size: 195.12767pt x 218.81265pt.
-<./Figures/pic_2.jpg, id=14, 2507.3675pt x 2619.7875pt>
+<./Figures/pic_2.jpg, id=22, 2507.3675pt x 2619.7875pt>
 File: ./Figures/pic_2.jpg Graphic file (type jpg)
 <use ./Figures/pic_2.jpg>
 Package pdftex.def Info: ./Figures/pic_2.jpg  used on input line 39.
 (pdftex.def)             Requested size: 195.12767pt x 203.8709pt.
-<./Figures/pic_3.jpg, id=15, 3035.34pt x 3034.33624pt>
+<./Figures/pic_3.jpg, id=23, 3035.34pt x 3034.33624pt>
 File: ./Figures/pic_3.jpg Graphic file (type jpg)
 <use ./Figures/pic_3.jpg>
 Package pdftex.def Info: ./Figures/pic_3.jpg  used on input line 44.
@@ -659,23 +664,41 @@ Package pdftex.def Info: ./Figures/pic_3.jpg  used on input line 44.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/pic_1.jpg> <./Fi
 gures/pic_2.jpg> <./Figures/pic_3.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (./warmup_2_writeup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
-Package rerunfilecheck Info: File `warmup_2_writeup.out' has not changed.
-(rerunfilecheck)             Checksum: 2A8A85ACAC5A13FB2E91A08A7D49F3FE;152.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
+<./Figures/pic_4.jpg, id=40, 2650.90375pt x 3019.28pt>
+File: ./Figures/pic_4.jpg Graphic file (type jpg)
+<use ./Figures/pic_4.jpg>
+Package pdftex.def Info: ./Figures/pic_4.jpg  used on input line 53.
+(pdftex.def)             Requested size: 260.17464pt x 296.32509pt.
+ [2 <./Figures/pic_4.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+
+(./warmup_2_writeup.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+
+
+Package rerunfilecheck Warning: File `warmup_2_writeup.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `warmup_2_writeup.out':
+(rerunfilecheck)             Before: F4A5CF16FA4C5735F55C699292BC2D02;337
+(rerunfilecheck)             After:  9A3B6A74632CB1C9C4F27E200A9ADEBE;391.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 9623 strings out of 482736
- 147151 string characters out of 5954138
- 428379 words of memory out of 5000000
- 24761 multiletter control sequences out of 15000+600000
- 566735 words of font info for 54 fonts, out of 8000000 for 9000
+ 9651 strings out of 483065
+ 147492 string characters out of 5963551
+ 426142 words of memory out of 5000000
+ 24452 multiletter control sequences out of 15000+600000
+ 563985 words of font info for 49 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 43i,5n,37p,296b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,8n,37p,296b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share
 /texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm
@@ -683,10 +706,10 @@ c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share
 /fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmtt12.pfb>
-Output written on warmup_2_writeup.pdf (1 page, 1617581 bytes).
+Output written on warmup_2_writeup.pdf (3 pages, 2257340 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 32 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
