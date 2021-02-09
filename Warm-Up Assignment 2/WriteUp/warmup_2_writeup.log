@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.10)  8 FEB 2021 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.10)  9 FEB 2021 01:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,23 +496,23 @@ LaTeX Warning: Label `' multiply defined.
 )
 \openout1 = `warmup_2_writeup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21
 .
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -532,7 +532,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \everyMPtoPDFconversion=\toks30
 )
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -544,9 +544,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count284
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./warmup_2_writeup.out) (./warmup_2_writeup.out)
 \@outlinefile=\write3
@@ -588,121 +588,233 @@ LaTeX Info: Redefining \nameref on input line 20.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-4.
+5.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-4.
+5.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-4.
+5.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-24.
+25.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-24.
+25.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 24.
+(Font)              <12> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 24.
+(Font)              <8> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 24.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+(Font)              <6> on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.76407pt too wide) in paragraph at lines 24--25
+Overfull \hbox (5.76407pt too wide) in paragraph at lines 25--26
 []\T1/lmr/m/n/12 GitHub Repo: []$\T1/lmtt/m/n/12 https : / / github . com / siv
 aprakasaman / Numerical _ Methods _ BME/$[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
-<./Figures/pic_1.jpg, id=25, 2768.3425pt x 3104.59875pt>
+<./Figures/pic_1.jpg, id=29, 2768.3425pt x 3104.59875pt>
 File: ./Figures/pic_1.jpg Graphic file (type jpg)
 <use ./Figures/pic_1.jpg>
-Package pdftex.def Info: ./Figures/pic_1.jpg  used on input line 38.
+Package pdftex.def Info: ./Figures/pic_1.jpg  used on input line 39.
 (pdftex.def)             Requested size: 195.12767pt x 218.81265pt.
-<./Figures/pic_2.jpg, id=26, 2507.3675pt x 2619.7875pt>
+<./Figures/pic_2.jpg, id=30, 2507.3675pt x 2619.7875pt>
 File: ./Figures/pic_2.jpg Graphic file (type jpg)
 <use ./Figures/pic_2.jpg>
-Package pdftex.def Info: ./Figures/pic_2.jpg  used on input line 39.
+Package pdftex.def Info: ./Figures/pic_2.jpg  used on input line 40.
 (pdftex.def)             Requested size: 195.12767pt x 203.8709pt.
-<./Figures/pic_3.jpg, id=27, 3035.34pt x 3034.33624pt>
+<./Figures/pic_3.jpg, id=31, 3035.34pt x 3034.33624pt>
 File: ./Figures/pic_3.jpg Graphic file (type jpg)
 <use ./Figures/pic_3.jpg>
-Package pdftex.def Info: ./Figures/pic_3.jpg  used on input line 44.
+Package pdftex.def Info: ./Figures/pic_3.jpg  used on input line 45.
 (pdftex.def)             Requested size: 260.17464pt x 260.06813pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/pic_1.jpg> <./Fi
 gures/pic_2.jpg> <./Figures/pic_3.jpg>]
-<./Figures/pic_4.jpg, id=44, 2650.90375pt x 3019.28pt>
+<./Figures/pic_4.jpg, id=48, 2650.90375pt x 3019.28pt>
 File: ./Figures/pic_4.jpg Graphic file (type jpg)
 <use ./Figures/pic_4.jpg>
-Package pdftex.def Info: ./Figures/pic_4.jpg  used on input line 53.
+Package pdftex.def Info: ./Figures/pic_4.jpg  used on input line 54.
 (pdftex.def)             Requested size: 260.17464pt x 296.32509pt.
  [2 <./Figures/pic_4.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+Underfull \hbox (badness 10000) in paragraph at lines 98--102
 
-(./warmup_2_writeup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+ []
+
+Package epstopdf Info: Source file: <./Figures/runtime1.eps>
+(epstopdf)                    date: 2021-02-09 00:59:42
+(epstopdf)                    size: 28438 bytes
+(epstopdf)             Output file: <./Figures/runtime1-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-09 01:00:47
+(epstopdf)                    size: 11145 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Figures/runtime1-eps-con
+verted-to.pdf ./Figures/runtime1.eps>
+(epstopdf)             \includegraphics on input line 103.
+Package epstopdf Info: Output file is already uptodate.
+<./Figures/runtime1-eps-converted-to.pdf, id=57, 429.605pt x 312.16624pt>
+File: ./Figures/runtime1-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Figures/runtime1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Figures/runtime1-eps-converted-to.pdf  used on input
+ line 103.
+(pdftex.def)             Requested size: 212.47617pt x 154.39177pt.
+Package epstopdf Info: Source file: <./Figures/runtime2.eps>
+(epstopdf)                    date: 2021-02-09 00:59:50
+(epstopdf)                    size: 27913 bytes
+(epstopdf)             Output file: <./Figures/runtime2-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-09 01:00:47
+(epstopdf)                    size: 10550 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Figures/runtime2-eps-con
+verted-to.pdf ./Figures/runtime2.eps>
+(epstopdf)             \includegraphics on input line 104.
+Package epstopdf Info: Output file is already uptodate.
+<./Figures/runtime2-eps-converted-to.pdf, id=58, 429.605pt x 312.16624pt>
+File: ./Figures/runtime2-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Figures/runtime2-eps-converted-to.pdf>
+Package pdftex.def Info: ./Figures/runtime2-eps-converted-to.pdf  used on input
+ line 104.
+(pdftex.def)             Requested size: 212.47617pt x 154.39177pt.
+Package epstopdf Info: Source file: <./Figures/convergence.eps>
+(epstopdf)                    date: 2021-02-09 00:54:52
+(epstopdf)                    size: 17752 bytes
+(epstopdf)             Output file: <./Figures/convergence-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2021-02-09 01:00:47
+(epstopdf)                    size: 9483 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Figures/convergence-eps-
+converted-to.pdf ./Figures/convergence.eps>
+(epstopdf)             \includegraphics on input line 105.
+Package epstopdf Info: Output file is already uptodate.
+<./Figures/convergence-eps-converted-to.pdf, id=59, 421.575pt x 316.18124pt>
+File: ./Figures/convergence-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Figures/convergence-eps-converted-to.pdf>
+Package pdftex.def Info: ./Figures/convergence-eps-converted-to.pdf  used on in
+put line 105.
+(pdftex.def)             Requested size: 238.49231pt x 178.86948pt.
+[3 <./Figures/runtime1-eps-converted-to.pdf> <./Figures/runtime2-eps-converted-
+to.pdf> <./Figures/convergence-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Figures/comp1.eps>
+(epstopdf)                    date: 2021-02-09 01:08:13
+(epstopdf)                    size: 106419 bytes
+(epstopdf)             Output file: <./Figures/comp1-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-09 01:08:52
+(epstopdf)                    size: 42473 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Figures/comp1-eps-conver
+ted-to.pdf ./Figures/comp1.eps>
+(epstopdf)             \includegraphics on input line 114.
+Package epstopdf Info: Output file is already uptodate.
+<./Figures/comp1-eps-converted-to.pdf, id=88, 429.605pt x 312.16624pt>
+File: ./Figures/comp1-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Figures/comp1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Figures/comp1-eps-converted-to.pdf  used on input li
+ne 114.
+(pdftex.def)             Requested size: 203.80193pt x 148.08997pt.
+Package epstopdf Info: Source file: <./Figures/zoomed_in.eps>
+(epstopdf)                    date: 2021-02-09 00:13:50
+(epstopdf)                    size: 16774 bytes
+(epstopdf)             Output file: <./Figures/zoomed_in-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-09 01:08:52
+(epstopdf)                    size: 8869 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Figures/zoomed_in-eps-co
+nverted-to.pdf ./Figures/zoomed_in.eps>
+(epstopdf)             \includegraphics on input line 115.
+Package epstopdf Info: Output file is already uptodate.
+<./Figures/zoomed_in-eps-converted-to.pdf, id=89, 414.54875pt x 321.2pt>
+File: ./Figures/zoomed_in-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Figures/zoomed_in-eps-converted-to.pdf>
+Package pdftex.def Info: ./Figures/zoomed_in-eps-converted-to.pdf  used on inpu
+t line 115.
+(pdftex.def)             Requested size: 186.45341pt x 144.46515pt.
+Package epstopdf Info: Source file: <./Figures/comp2.eps>
+(epstopdf)                    date: 2021-02-09 01:14:29
+(epstopdf)                    size: 24600 bytes
+(epstopdf)             Output file: <./Figures/comp2-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-02-09 01:14:32
+(epstopdf)                    size: 12387 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Figures/comp2-eps-conver
+ted-to.pdf ./Figures/comp2.eps>
+(epstopdf)             \includegraphics on input line 120.
+Package epstopdf Info: Output file is already uptodate.
+<./Figures/comp2-eps-converted-to.pdf, id=90, 429.605pt x 312.16624pt>
+File: ./Figures/comp2-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Figures/comp2-eps-converted-to.pdf>
+Package pdftex.def Info: ./Figures/comp2-eps-converted-to.pdf  used on input li
+ne 120.
+(pdftex.def)             Requested size: 281.85034pt x 204.8062pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+27.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+ [4 <./Figures/comp1-eps-converted-to.pdf> <./Figures/zoomed_in-eps-converted-t
+o.pdf> <./Figures/comp2-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+ (./warmup_2_writeup.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `warmup_2_writeup.out' has not changed.
-(rerunfilecheck)             Checksum: 9A3B6A74632CB1C9C4F27E200A9ADEBE;391.
+(rerunfilecheck)             Checksum: CF193AA5DC662082A00AB78CE1875A81;460.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 9643 strings out of 482736
- 147394 string characters out of 5954138
- 431469 words of memory out of 5000000
- 24773 multiletter control sequences out of 15000+600000
- 566735 words of font info for 54 fonts, out of 8000000 for 9000
+ 9810 strings out of 482736
+ 150622 string characters out of 5954138
+ 433475 words of memory out of 5000000
+ 24920 multiletter control sequences out of 15000+600000
+ 571372 words of font info for 56 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 43i,8n,37p,296b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share
-/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmtt12.pfb>
-Output written on warmup_2_writeup.pdf (3 pages, 2257380 bytes).
+ 43i,9n,37p,519b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
+m-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on warmup_2_writeup.pdf (4 pages, 2360545 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
