@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.10)  9 FEB 2021 01:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.10)  9 FEB 2021 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -654,22 +654,22 @@ File: ./Figures/pic_2.jpg Graphic file (type jpg)
 <use ./Figures/pic_2.jpg>
 Package pdftex.def Info: ./Figures/pic_2.jpg  used on input line 40.
 (pdftex.def)             Requested size: 195.12767pt x 203.8709pt.
-<./Figures/pic_3.jpg, id=31, 3035.34pt x 3034.33624pt>
-File: ./Figures/pic_3.jpg Graphic file (type jpg)
-<use ./Figures/pic_3.jpg>
-Package pdftex.def Info: ./Figures/pic_3.jpg  used on input line 45.
-(pdftex.def)             Requested size: 260.17464pt x 260.06813pt.
+<./Figures/bisect_flow.png, id=31, 446.66875pt x 385.44pt>
+File: ./Figures/bisect_flow.png Graphic file (type png)
+<use ./Figures/bisect_flow.png>
+Package pdftex.def Info: ./Figures/bisect_flow.png  used on input line 46.
+(pdftex.def)             Requested size: 260.17464pt x 224.514pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/pic_1.jpg> <./Fi
-gures/pic_2.jpg> <./Figures/pic_3.jpg>]
-<./Figures/pic_4.jpg, id=48, 2650.90375pt x 3019.28pt>
-File: ./Figures/pic_4.jpg Graphic file (type jpg)
-<use ./Figures/pic_4.jpg>
-Package pdftex.def Info: ./Figures/pic_4.jpg  used on input line 54.
-(pdftex.def)             Requested size: 260.17464pt x 296.32509pt.
- [2 <./Figures/pic_4.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 98--102
+gures/pic_2.jpg> <./Figures/bisect_flow.png>]
+<./Figures/newton_flow.png, id=51, 375.4025pt x 314.17375pt>
+File: ./Figures/newton_flow.png Graphic file (type png)
+<use ./Figures/newton_flow.png>
+Package pdftex.def Info: ./Figures/newton_flow.png  used on input line 56.
+(pdftex.def)             Requested size: 260.17464pt x 217.75327pt.
+ [2 <./Figures/newton_flow.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
 
  []
 
@@ -681,13 +681,13 @@ Package epstopdf Info: Source file: <./Figures/runtime1.eps>
 (epstopdf)                    size: 11145 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Figures/runtime1-eps-con
 verted-to.pdf ./Figures/runtime1.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 105.
 Package epstopdf Info: Output file is already uptodate.
-<./Figures/runtime1-eps-converted-to.pdf, id=57, 429.605pt x 312.16624pt>
+<./Figures/runtime1-eps-converted-to.pdf, id=61, 429.605pt x 312.16624pt>
 File: ./Figures/runtime1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Figures/runtime1-eps-converted-to.pdf>
 Package pdftex.def Info: ./Figures/runtime1-eps-converted-to.pdf  used on input
- line 103.
+ line 105.
 (pdftex.def)             Requested size: 212.47617pt x 154.39177pt.
 Package epstopdf Info: Source file: <./Figures/runtime2.eps>
 (epstopdf)                    date: 2021-02-09 00:59:50
@@ -697,13 +697,13 @@ Package epstopdf Info: Source file: <./Figures/runtime2.eps>
 (epstopdf)                    size: 10550 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Figures/runtime2-eps-con
 verted-to.pdf ./Figures/runtime2.eps>
-(epstopdf)             \includegraphics on input line 104.
+(epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
-<./Figures/runtime2-eps-converted-to.pdf, id=58, 429.605pt x 312.16624pt>
+<./Figures/runtime2-eps-converted-to.pdf, id=62, 429.605pt x 312.16624pt>
 File: ./Figures/runtime2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Figures/runtime2-eps-converted-to.pdf>
 Package pdftex.def Info: ./Figures/runtime2-eps-converted-to.pdf  used on input
- line 104.
+ line 106.
 (pdftex.def)             Requested size: 212.47617pt x 154.39177pt.
 Package epstopdf Info: Source file: <./Figures/convergence.eps>
 (epstopdf)                    date: 2021-02-09 00:54:52
@@ -714,13 +714,13 @@ Package epstopdf Info: Source file: <./Figures/convergence.eps>
 (epstopdf)                    size: 9483 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Figures/convergence-eps-
 converted-to.pdf ./Figures/convergence.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
-<./Figures/convergence-eps-converted-to.pdf, id=59, 421.575pt x 316.18124pt>
+<./Figures/convergence-eps-converted-to.pdf, id=63, 421.575pt x 316.18124pt>
 File: ./Figures/convergence-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Figures/convergence-eps-converted-to.pdf>
 Package pdftex.def Info: ./Figures/convergence-eps-converted-to.pdf  used on in
-put line 105.
+put line 107.
 (pdftex.def)             Requested size: 238.49231pt x 178.86948pt.
 [3 <./Figures/runtime1-eps-converted-to.pdf> <./Figures/runtime2-eps-converted-
 to.pdf> <./Figures/convergence-eps-converted-to.pdf>]
@@ -732,13 +732,13 @@ Package epstopdf Info: Source file: <./Figures/comp1.eps>
 (epstopdf)                    size: 42473 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Figures/comp1-eps-conver
 ted-to.pdf ./Figures/comp1.eps>
-(epstopdf)             \includegraphics on input line 114.
+(epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
-<./Figures/comp1-eps-converted-to.pdf, id=88, 429.605pt x 312.16624pt>
+<./Figures/comp1-eps-converted-to.pdf, id=91, 429.605pt x 312.16624pt>
 File: ./Figures/comp1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Figures/comp1-eps-converted-to.pdf>
 Package pdftex.def Info: ./Figures/comp1-eps-converted-to.pdf  used on input li
-ne 114.
+ne 116.
 (pdftex.def)             Requested size: 203.80193pt x 148.08997pt.
 Package epstopdf Info: Source file: <./Figures/zoomed_in.eps>
 (epstopdf)                    date: 2021-02-09 00:13:50
@@ -748,13 +748,13 @@ Package epstopdf Info: Source file: <./Figures/zoomed_in.eps>
 (epstopdf)                    size: 8869 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Figures/zoomed_in-eps-co
 nverted-to.pdf ./Figures/zoomed_in.eps>
-(epstopdf)             \includegraphics on input line 115.
+(epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
-<./Figures/zoomed_in-eps-converted-to.pdf, id=89, 414.54875pt x 321.2pt>
+<./Figures/zoomed_in-eps-converted-to.pdf, id=92, 414.54875pt x 321.2pt>
 File: ./Figures/zoomed_in-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Figures/zoomed_in-eps-converted-to.pdf>
 Package pdftex.def Info: ./Figures/zoomed_in-eps-converted-to.pdf  used on inpu
-t line 115.
+t line 117.
 (pdftex.def)             Requested size: 186.45341pt x 144.46515pt.
 Package epstopdf Info: Source file: <./Figures/comp2.eps>
 (epstopdf)                    date: 2021-02-09 01:14:29
@@ -764,43 +764,43 @@ Package epstopdf Info: Source file: <./Figures/comp2.eps>
 (epstopdf)                    size: 12387 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Figures/comp2-eps-conver
 ted-to.pdf ./Figures/comp2.eps>
-(epstopdf)             \includegraphics on input line 120.
+(epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-<./Figures/comp2-eps-converted-to.pdf, id=90, 429.605pt x 312.16624pt>
+<./Figures/comp2-eps-converted-to.pdf, id=93, 429.605pt x 312.16624pt>
 File: ./Figures/comp2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Figures/comp2-eps-converted-to.pdf>
 Package pdftex.def Info: ./Figures/comp2-eps-converted-to.pdf  used on input li
-ne 120.
+ne 122.
 (pdftex.def)             Requested size: 281.85034pt x 204.8062pt.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-27.
+29.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
  [4 <./Figures/comp1-eps-converted-to.pdf> <./Figures/zoomed_in-eps-converted-t
 o.pdf> <./Figures/comp2-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (./warmup_2_writeup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
 Package rerunfilecheck Info: File `warmup_2_writeup.out' has not changed.
 (rerunfilecheck)             Checksum: CF193AA5DC662082A00AB78CE1875A81;460.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 9810 strings out of 482736
- 150622 string characters out of 5954138
+ 9808 strings out of 482736
+ 150688 string characters out of 5954138
  433475 words of memory out of 5000000
- 24920 multiletter control sequences out of 15000+600000
+ 24918 multiletter control sequences out of 15000+600000
  571372 words of font info for 56 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 43i,9n,37p,519b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,37p,634b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
 vips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
@@ -811,10 +811,10 @@ pe1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on warmup_2_writeup.pdf (4 pages, 2360545 bytes).
+Output written on warmup_2_writeup.pdf (4 pages, 1216826 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 173 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  19 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

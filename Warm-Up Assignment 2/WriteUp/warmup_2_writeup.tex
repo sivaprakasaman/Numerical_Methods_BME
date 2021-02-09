@@ -40,9 +40,10 @@ GitHub Repo: \url{https://github.com/sivaprakasaman/Numerical_Methods_BME/}
 \includegraphics[width = .45\textwidth]{pic_2}
 \end{center}
 
-\item Bisection Method Flowchart:
+\item Bisection Method Flowchart (see code for implementation):
 \begin{center}
-\includegraphics[width = .6\textwidth]{pic_3}
+\textit{flowchart from codingalpha.com}
+\includegraphics[width = .6\textwidth]{bisect_flow}
 \end{center}
 \end{enumerate}
 
@@ -51,7 +52,8 @@ GitHub Repo: \url{https://github.com/sivaprakasaman/Numerical_Methods_BME/}
 \begin{enumerate}
 \item Below is a flowchart demonstrating Newton's Method:
 \begin{center}
-\includegraphics[width = .6\textwidth]{pic_4}
+\textit{flowchart from codingalpha.com}
+\includegraphics[width = .6\textwidth]{newton_flow}
 \end{center}
 \item Here is a table showing iteration $k$, $x_k$, and $\epsilon$ for the first root-finding problem. $\epsilon$ was set to $10^{-6}$.
 
@@ -95,7 +97,7 @@ GitHub Repo: \url{https://github.com/sivaprakasaman/Numerical_Methods_BME/}
 
 \newpage
 \subsection{Comparison of Algorithms | Task List 1-C}
-Wall-clock runtime analysis demonstrates, in the cases provided, that the bisection method performs faster than the Newton Method in the top two figures. HOWEVER, this absolutely does not mean Bisection Method is better than Newton Method. In fact, the bisection requires more iterations to converge to a solution within error $\epsilon$ as seen in the bottom figure. The bisection method converges linearly while Newton's Method converges quadratically.
+Wall-clock runtime analysis demonstrates, in the cases provided, that the bisection method performs faster than the Newton Method in the top two figures. HOWEVER, this absolutely does not mean Bisection Method is better than Newton's Method. In fact, the bisection requires more iterations to converge to a solution within error $\epsilon$ as seen in the bottom figure. The bisection method converges linearly while Newton's Method converges quadratically.
 \\ \\
 \textit{The limiting factor in this case is likely the fact that Newton's Method requires the evaluation of a derivative prior to iterating, which computationally takes a good bit of time. 
 }
@@ -109,7 +111,7 @@ Wall-clock runtime analysis demonstrates, in the cases provided, that the bisect
 \section{Runge-Kutta Methods}
 \begin{enumerate}
 
-\item Euler's Method (RK1), RK2, and RK4 estimations of the solution to the ODE $y^{\prime} = -y$ were compared to the analytical solution (black). Notably, the RK4 estimation was closest followed by RK2 and Euler's Method.
+\item Euler's Method (RK1), RK2, and RK4 estimations of the solution to the ODE $y^{\prime} = -y$ were compared to the analytical solution (black). Notably, the RK4 estimation was closest followed by RK2 and Euler's Method. See code for implementations.
 \begin{center}
 \includegraphics[width = .47\textwidth]{comp1}
 \includegraphics[width = .43\textwidth]{zoomed_in}
@@ -124,7 +126,7 @@ Wall-clock runtime analysis demonstrates, in the cases provided, that the bisect
 
 \section{Nelder-Mead Optimization Algorithm}
 \begin{itemize}
-\item The Nelder-Mead algorithm can primarily be used when trying to determine the minimums presented in an $n$-dimensional function. This might be particularly useful in mapping the lowest point of a 3D map or in non-linear optimization problems such as Rosenbrock's Function. Nelder-Mead can also be used when the derivative of the function is not known.
+\item The Nelder-Mead algorithm can primarily be used when trying to determine the minimums presented in an $n$-dimensional function. This might be particularly useful in mapping the lowest point of a 3D map or in \textit{non-linear optimization problems} such as Rosenbrock's Function. Nelder-Mead can also be used when the derivative of the function is not known, for example in a black-box type problem where a system must be perturbed in order to quantify a response.
 
 \item Using the \verb|fminsearch| function, I was able to ascertain that the minimum of the Rosenbrock function is $[1,1]$.
 \end{itemize}
