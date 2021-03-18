@@ -9,9 +9,9 @@
 % ==================================================
  senHF4 = .38;%38
  senLF4 = .84;%84
- senM = .80;%80
+ senM = .72;%80
  senFS = .80;%80
- speM = .86;%86
+ speM = .89;%86
  speFS = .81;%81
 undet=0.32; %undetermined FS test results
  speHcc=.83;
