@@ -63,7 +63,7 @@ c_bld_lb=1600; %Cost of treating LB caused bleeding
 %Termination time
 Tmax=60;
 %Population size
-pop =10000;
+pop =100000;
 seed=47906;
 
 %Vary Pc
