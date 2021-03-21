@@ -1,0 +1,7 @@
+\frametitle{Sample-Based Sensitivity Analysis}
+Here is a verification that my sampling was done correctly. I created a brute-force method for orthogonal sampling, \verb|orth_samples.m|.
+
+\vspace{1em}
+\centering
+\hspace*{-2cm}
+\includegraphics[scale = .41]{sampling_ex}

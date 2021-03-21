@@ -372,7 +372,7 @@ hold on
 barh(acc_min(I_a)','BaseValue', acc_base(r))
 barh(acc_max(I_a)','BaseValue', acc_base(r))
 legend("Min","Max",'Location','southeast');
-sgtitle("Sensitivity Analysis for Params and Their Effect on Fib-4+MRE");
+sgtitle("Fib-4+MRE");
 yticks([1:12])
 yticklabels(ticklabels(I_a));
 
@@ -412,7 +412,7 @@ hold on
 barh(acc_min(I_a)','BaseValue', acc_base(r))
 barh(acc_max(I_a)','BaseValue', acc_base(r))
 legend("Min","Max",'Location','southeast');
-sgtitle("Sensitivity Analysis for Params and Their Effect on Fib-4+LB");
+sgtitle("Fib-4+LB");
 yticks([1:12])
 yticklabels(ticklabels(I_a));
 
@@ -454,7 +454,7 @@ hold on
 barh(acc_min(I_a)','BaseValue', acc_base(r))
 barh(acc_max(I_a)','BaseValue', acc_base(r))
 legend("Min","Max",'Location','southeast');
-sgtitle("Sensitivity Analysis for Params and Their Effect on Fib-4+VCTE");
+sgtitle("Fib-4+VCTE");
 yticks([1:12])
 yticklabels(ticklabels(I_a));
 
