@@ -152,5 +152,89 @@ Here are the 3D plots, regression equations and Pearson's correlation coefficien
 \includegraphics[scale = .3]{lb6}
 \end{frame}
 
+\begin{frame}
+\frametitle{Question 3g $|$ Rank/Statistical Tests}
 
+Rank transformations may be useful for particular sensitivity analyses, but depend on the type of data and sample selection. In grid-based techniques, the model outputs may have a sort of distribution or cluster of interest. With a rank transformation, visualizing this will be difficult, since the data is transformed to a uniform distribution.
+
+\vspace{1em}
+Similarly, statistical tests may be employed when proper assumptions hold true. In this model, the outputs may not be normally distributed (as in the Fib + MRE/LB Accuracy full-factorial experiment). 
+\end{frame}
+
+\begin{frame}
+\frametitle{Question 3h $|$ Inducing Correlation in Sampling}
+
+Here is a verification that my sampling correlation was induced properly:
+
+\vspace{1em}
+\centering                                                         
+\includegraphics[width = .32\textwidth]{corr_ex1}
+\includegraphics[width = .32\textwidth]{corr_ex2}
+\includegraphics[width = .32\textwidth]{corr_ex3}\\
+\textit{I chose these sampling correlations since there should in theory be a fairly strong correlation between sensitivity and specificity for a good clinical test. However, in some cases, they may not have as much correlation or be weakly correlated. I also assumed a normal distribution of sampling, since these test results are likely also normally distributed.} 
+\end{frame}
+
+\begin{frame}
+\frametitle{Question 3h $|$ Inducing Correlation in Sampling - \underline{MRE}}
+
+Here are the results with correlated sampling for MRE sens/spec. Correlation decreases from left to right.
+
+\vspace{1em}
+\centering                                                         
+\includegraphics[scale = .3]{mrecorr1}
+\includegraphics[scale = .3]{mrecorr2}
+\includegraphics[scale = .3]{mrecorr3}\\
+\includegraphics[scale = .3]{mrecorr4}
+\includegraphics[scale = .3]{mrecorr5}
+\includegraphics[scale = .3]{mrecorr6}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Question 3h $|$ Inducing Correlation in Sampling - \underline{LB}}
+
+Here are the results with correlated sampling for LB sens/spec. Correlation decreases from left to right.
+
+\vspace{1em}
+\centering                                                         
+\includegraphics[scale = .3]{lbcorr1}
+\includegraphics[scale = .3]{lbcorr2}
+\includegraphics[scale = .3]{lbcorr3}\\
+\includegraphics[scale = .3]{lbcorr4}
+\includegraphics[scale = .3]{lbcorr5}
+\includegraphics[scale = .3]{lbcorr6}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Question 3i $|$ Importance Sampling}
+
+I changed my sampling distribution from uniform (as in random, lhs, orthogonal sampling). I used a Beta($\alpha,\beta$) distribution with $\alpha = 5$ and $\beta = 2$ for both MRE specificity and senstivity to simulate a more optimistic sampling distribution. This beta distribution implies that the model output means are representative of samples with left-skewed sensitivity and specificity.
+
+\begin{columns}
+\begin{column}{0.45\textwidth}
+The distributions compared to the uniform distribution found in the LHS sampling technique
+\end{column}
+\begin{column}{0.45\textwidth}
+\includegraphics[scale = 0.5]{beta_dist} 
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Question 3i $|$ Importance Sampling}
+The output averages were as follows:
+\vspace{1em}
+\begin{table}[htbp]
+\begin{tabular}{|l|l|l|}
+\hline
+ & \multicolumn{ 2}{l|}{\textbf{\hspace{1em} Parameter Varied}} \\ \hline
+ & \textbf{MRE Sens} & \textbf{MRE Spec} \\ \hline
+\textbf{Cost} & \multicolumn{1}{r|}{767.0697} & \multicolumn{1}{r|}{706.8664} \\ \hline
+\textbf{Accuracy} & \multicolumn{1}{r|}{0.9324} & \multicolumn{1}{r|}{0.9471} \\ \hline
+\end{tabular}\end{table}
+\vspace{1em}
+As sensitivity is skewed left, the accuracy decreases and cost increases. Conversely, as specificity is skewed left, the accuracy increases, and the cost decreases. This could be because a higher positive test rate (true in screening tests with higher sensitivity) results in a required confirmatory test with another method with additional costs. A more specific test means less false positives, which prevents decreases the likelihood of this added cost.  
+\end{frame}
 \end{document}

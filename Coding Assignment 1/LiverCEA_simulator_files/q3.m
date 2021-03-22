@@ -842,10 +842,26 @@ undet=0.32; %undetermined FS test results
  fmre=0.04;
  ffs=0.071;
 
-
+senM = [0.6,.97]; 
+speM = [0.84,.93];
+ 
 z = lhsgeneral({makedist('Normal',mean(senM_lhs),std(senM_lhs)),makedist('Normal',mean(speM_lhs),std(speM_lhs))}, [1,correlation;correlation,1], 20);
 senM_corr = z(:,1);
 speM_corr = z(:,2);
+
+figure;
+scatter(senM_corr,speM_corr);
+hold on
+plot(senM,ones(2,1)*mean(speM),'LineWidth',1.5)
+plot(ones(2,1)*mean(senM),speM,'LineWidth',1.5)
+xlim(senM)
+ylim(speM)
+xlabel('Sensitivity')
+ylabel('Specificity')
+title(['Correlated Sampling | Correlation = ', num2str(correlation)])
+axis square
+hold off
+saveas(gcf,'corr_ex1','epsc')
 
 
 parfor i = 1:length(random_samples)
@@ -872,25 +888,33 @@ p_hccpreo,Tmax,pop);
        
 end
 
+spe_corr_corr_mre_cost = corr(Fib4MRE_cost_corr',speM_corr)
+sen_corr_corr_mre_cost = corr(Fib4MRE_cost_corr',senM_corr)
+
+spe_corr_corr_mre_acc = corr(Fib4MRE_acc_corr',speM_corr)
+sen_corr_corr_mre_acc = corr(Fib4MRE_acc_corr',senM_corr)
+
 figure;
 plot3(senM_corr,speM_corr,Fib4MRE_cost_corr,'o','MarkerSize',3)
 xlabel('MRE Sensitivity');
 ylabel('MRE Specificity');
 zlabel('MRE Cost');
+text(0.2,0.9,0,{['Corr Sen Cost = ', num2str(sen_corr_corr_mre_cost)]...
+    ,['Corr Spe cost = ',num2str(spe_corr_corr_mre_cost)]},'Units','Normalized')
 title(['Correlated LHS Sampling | Correlation = ', num2str(correlation)])
+saveas(gcf,'mrecorr3','epsc')
 
 figure;
 plot3(senM_corr,speM_corr,Fib4MRE_acc_corr,'o','MarkerSize',3)
 xlabel('MRE Sensitivity');
 ylabel('MRE Specificity');
 zlabel('MRE Accuracy');
+text(0.2,0.9,0,{['Corr Sen Accuracy = ', num2str(sen_corr_corr_mre_acc)]...
+    ,['Corr Spe Accuracy = ',num2str(spe_corr_corr_mre_acc)]},'Units','Normalized')
 title(['Correlated LHS Sampling | Correlation = ', num2str(correlation)])
+saveas(gcf,'mrecorr6','epsc')
 
-spe_corr_corr_mre_cost = corr(Fib4MRE_cost_corr',speM_corr)
-sen_corr_corr_mre_cost = corr(Fib4MRE_cost_corr',senM_corr)
 
-spe_corr_corr_mre_acc = corr(Fib4MRE_acc_corr',speM_corr)
-sen_corr_corr_mre_acc = corr(Fib4MRE_acc_corr',senM_corr)
 
 %% 3H Sensitivity Analysis Using Samples with Induced Correlation: | LB
 senHF4 = .38;%38
@@ -907,6 +931,7 @@ undet=0.32; %undetermined FS test results
  fmre=0.04;
  ffs=0.071;
 
+correlation = 0.0;
 
 z = lhsgeneral({makedist('Normal',mean(senL_lhs),std(senL_lhs)),makedist('Normal',mean(speL_lhs),std(speL_lhs))}, [1,correlation;correlation,1], 20);
 senL_corr = z(:,1);
@@ -936,25 +961,34 @@ p_hccpreo,Tmax,pop);
        
 end
 
-figure;
-plot3(senL_corr,speL_corr,Fib4LB_cost_corr,'o','MarkerSize',3)
-xlabel('LB Sensitivity');
-ylabel('LB Specificity');
-zlabel('LB Cost');
-title(['Correlated LHS Sampling | Correlation = ', num2str(correlation)])
-
-figure;
-plot3(senL_corr,speL_corr,Fib4LB_acc_corr,'o','MarkerSize',3)
-xlabel('LB Sensitivity');
-ylabel('LB Specificity');
-zlabel('LB Accuracy');
-title(['Correlated LHS Sampling | Correlation = ', num2str(correlation)])
 
 spe_corr_corr_lb_cost = corr(Fib4LB_cost_corr',speL_corr)
 sen_corr_corr_lb_cost = corr(Fib4LB_cost_corr',senL_corr)
 
 spe_corr_corr_lb_acc = corr(Fib4LB_acc_corr',speL_corr)
 sen_corr_corr_lb_acc = corr(Fib4LB_acc_corr',senL_corr)
+
+
+figure;
+plot3(senL_corr,speL_corr,Fib4LB_cost_corr,'o','MarkerSize',3)
+xlabel('LB Sensitivity');
+ylabel('LB Specificity');
+zlabel('LB Cost');
+text(0.2,0.9,0,{['Corr Sen Cost = ', num2str(sen_corr_corr_lb_cost)]...
+    ,['Corr Spe cost = ',num2str(spe_corr_corr_lb_cost)]},'Units','Normalized')
+title(['Correlated LHS Sampling | Correlation = ', num2str(correlation)])
+saveas(gcf,'lbcorr3','epsc')
+
+figure;
+plot3(senL_corr,speL_corr,Fib4LB_acc_corr,'o','MarkerSize',3)
+xlabel('LB Sensitivity');
+ylabel('LB Specificity');
+zlabel('LB Accuracy');
+text(0.2,0.9,0,{['Corr Sen Accuracy = ', num2str(sen_corr_corr_lb_acc)]...
+    ,['Corr Spe Accuracy = ',num2str(spe_corr_corr_lb_acc)]},'Units','Normalized')
+title(['Correlated LHS Sampling | Correlation = ', num2str(correlation)])
+saveas(gcf,'lbcorr6','epsc')
+
 
 %% 3I Importance Sampling of MRE: 
 
