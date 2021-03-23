@@ -161,8 +161,9 @@ Rank transformations may be useful for particular sensitivity analyses, but depe
 Similarly, statistical tests may be employed when proper assumptions hold true. In this model, the outputs may not be normally distributed (as in the Fib + MRE/LB Accuracy full-factorial experiment). 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[shrink = 12]
 \frametitle{Question 3h $|$ Inducing Correlation in Sampling}
+\setbeamercolor{block title}{use=structure,fg=white,bg=purple!75!black}
 
 Here is a verification that my sampling correlation was induced properly:
 
@@ -171,8 +172,22 @@ Here is a verification that my sampling correlation was induced properly:
 \includegraphics[width = .32\textwidth]{corr_ex1}
 \includegraphics[width = .32\textwidth]{corr_ex2}
 \includegraphics[width = .32\textwidth]{corr_ex3}\\
-\textit{I chose these sampling correlations since there should in theory be a fairly strong correlation between sensitivity and specificity for a good clinical test. However, in some cases, they may not have as much correlation or be weakly correlated. I also assumed a normal distribution of sampling, since these test results are likely also normally distributed.} 
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\footnotesize{I chose these sampling correlations since there should in theory be a fairly strong correlation between sensitivity and specificity for a good clinical test. However, in some cases, they may not have as much correlation or be weakly correlated. I also assumed a normal distribution of sampling, since these test results are likely also normally distributed.} 
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{block}{Correction!}
+In reality there is more often a trade-off between sensitivity and specificity (not all clinical tests are perfect). Would have been more realistic to have shifted sampling to more properly represent ROC curve! 
+\end{block}
+\end{column}
+\end{columns}
 \end{frame}
+
+
+
+
 
 \begin{frame}
 \frametitle{Question 3h $|$ Inducing Correlation in Sampling - \underline{MRE}}
