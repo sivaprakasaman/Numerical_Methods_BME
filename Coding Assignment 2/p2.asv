@@ -1,0 +1,36 @@
+%Andrew Sivaprakasam
+%BME 695 | Numerical Methods
+%Coding Assignment 2 Problem 2
+
+%% Beale Function:
+% syms x y
+% f = @(x,y)(1.5-x+x*y)+(2.25-x+x*y^2)^2 + (2.625 - x + x*y)^2;
+
+x = linspace(-4.5,4.5,100);
+y = x;
+[x,y] = meshgrid(x);
+f_beale = (1.5-x+x.*y)+(2.25-x+x.*y.^2).^2 + (2.625 - x + x.*y).^2;
+
+% ff = f(xx,yy);
+% levels = 100;
+% contour(x,y,ff,levels);
+
+surf(x,y,f_beale)
+figure;
+contour(x,y,f_beale);
+
+%% Rosenbrock Function
+
+% syms x
+% 
+% %Minimize Rosenbrock's fxn using Nelder-Mead
+f = @(x,y) 100.*(y-x.^2).^2 + (1-x).^2;
+% mins = fminsearch(f,[-1.2,1]);
+
+x = linspace(-100,100);
+y = x;
+[x,y] = meshgrid(-2:0.1:2);
+
+f_rosen = feval(f,x,y);
+
+surf(x,y,f_rosen);
