@@ -1,3 +1,7 @@
+%Andrew Sivaprakasam
+%BME 695 | Numerical Methods
+%Coding Assignment 2 Problem 1
+
 function [x_out,y_out] = spline_2(x,y,x_out, end_cond)
 
 if nargin == 3
@@ -44,11 +48,13 @@ switch end_cond
         y_mat(end) = 0;   
 end
 
+%Tridiagonal matrix
 for i = 2:n-1
     coeff_mat(i,i-1:i+1) = [h(i-1),2*(h(i-1)+h(i)),h(i)];
     y_mat(i) = 3*(del_y(i)/h(i) - del_y(i-1)/h(i-1));
 end
 
+%Solve linear system of equations
 c = inv(coeff_mat)*y_mat;
 
 for j = 1:n-1
