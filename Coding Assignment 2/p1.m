@@ -58,9 +58,9 @@ grid on
 clear all
 %generate sampled function
 x = -1:0.2:1;
-y = 1./(1+4*x.^2);
+y = 1./(1+25*x.^2);
 x_cont = -1:0.01:1;
-y_cont = 1./(1+4*x_cont.^2);
+y_cont = 1./(1+25*x_cont.^2);
 x_out = x_cont;
 
 figure;
@@ -89,4 +89,5 @@ hold off
 legend('sampled','continuous','natural','complete','parabolic','nak','polynomial_{14}');
 
 title('Runge Function Comparisons of End Conditions');
+xlim([-.7,.7])
 grid on

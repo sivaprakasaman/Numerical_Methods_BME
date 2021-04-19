@@ -2,8 +2,8 @@
 %BME 695 | Numerical Methods
 %Coding Assignment 2 Problem 2
 
+close all;
 %% Beale Function:
-
 
 x = linspace(-4.5,4.5,100);
 y = x;
@@ -18,7 +18,6 @@ hold on;
 surf(x,y,f_beale)
 contour(x,y,f_beale);
 set(gca, 'CameraPosition', [-28.753761674980247,-58.83682331833516,941526.1673450879]);
-hold off
 
 xlabel('x')
 ylabel('y')
@@ -37,12 +36,11 @@ y = x;
 [x,y] = meshgrid(x,y);
 
 f_rosen = feval(f,x,y);
-figure;
+figure(3);
 hold on
 surf(x,y,f_rosen);
 contour(x,y,f_rosen);
 set(gca, 'CameraPosition', [-50.293365694665845,-86.25634924965654,511952.0929456182]);
-hold off
 xlabel('x')
 ylabel('y')
 zlabel('f(x,y)')
@@ -66,15 +64,33 @@ mins = fminsearch(f,[2,2,2,2]);
 %% 3 Response Surface Optimization:
 
 %Start with cc design centered at start point, find min
+num_runs = 100;
+%start point
+min_rsm = [4,4];
+true_val = [1,1]
+j = 1;
+while(j <= num_runs && sum(abs(min_rsm-true_val))>0.02)
+    points = ccdesign(2) + min_rsm;
+    %f = @(x1,x2)(1.5-x1+x1.*x2).^2+(2.25-x1+x1.*x2.^2).^2 + (2.625 - x1 + x1.*x2.^3).^2;
+    f = @(x1,x2) 100.*(x2-x1.^2).^2 + (1-x1).^2;
 
-%Fit linear model
+    func = feval(f,points(:,1),points(:,2));
+    
+    polymodel = polyfitn(points, func,2);
+    poly_s = polyn2sym(polymodel);
+    
+    poly_s2 = matlabFunction(poly_s);
+    coeffs = polymodel.Coefficients;
+    poly_s = @(x) coeffs(1)*x(1).^2 + coeffs(2)*x(1).*x(2) + coeffs(3)*x(1) + coeffs(4)*x(2).^2 + coeffs(5)*x(2) + coeffs(6);
+    
+    [min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[min(points(:,1)),min(points(:,2))],[max(points(:,1)),max(points(:,2))]);    
+    %[min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[-4.5 -4.5],[4.5 4.5]);    
 
-%If slope sign is negative, continue using linear model
+    min_rsm_p(j,:) = min_rsm;
+    
+    j = j+1;
+end
 
-%If slope sign changes to positive, switch to quadratic model
-
-%Fit a quadratic model
-
-%Minimize quadratic model using fminsearch
-
-%stop after a given no of iterations
+    figure(3)
+    c = linspace(1,10,num_runs);
+    scatter3(min_rsm_p(:,1),min_rsm_p(:,2), fval_rsm(:),'filled');

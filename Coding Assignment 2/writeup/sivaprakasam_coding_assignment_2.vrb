@@ -1,0 +1,8 @@
+\frametitle{Problem 2 $|$ Task 3}
+
+\small{I had some issues with my implementation of Response Surface optimization of these two functions. Since we were asked to continuously fit a quadratic instead of a linear function \textit{then} a quadratic, the minimization may have chosen points past the minimum, resulting in oscillations about the true minimum. Here are plots of where my minimum points (blue) ended up settling relative to these surfaces.}
+
+\vspace{1em}
+\centering
+\includegraphics[width = .49\textwidth]{2_beale_rsm}
+\includegraphics[width = .49\textwidth]{2_rbrock_rsm}
