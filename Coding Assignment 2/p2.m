@@ -77,19 +77,19 @@ nbins = 5;
 mid = [4,4];
 
 %generate full factorial design
-% points = bwidth.*fullfact([nbins,nbins]);
-% points(:,1) = points(:,1)+(mid(1)-mean(points(:,1)));
-% points(:,2) = points(:,2)+(mid(2)-mean(points(:,2)));
+points = bwidth.*fullfact([nbins,nbins]);
+points(:,1) = points(:,1)+(mid(1)-mean(points(:,1)));
+points(:,2) = points(:,2)+(mid(2)-mean(points(:,2)));
 
 
-f = @(x1,x2)(1.5-x1+x1.*x2).^2+(2.25-x1+x1.*x2.^2).^2 + (2.625 - x1 + x1.*x2.^3).^2;
-%f = @(x1,x2) 100.*(x2-x1.^2).^2 + (1-x1).^2;
+%f = @(x1,x2)(1.5-x1+x1.*x2).^2+(2.25-x1+x1.*x2.^2).^2 + (2.625 - x1 + x1.*x2.^3).^2;
+f = @(x1,x2) 100.*(x2-x1.^2).^2 + (1-x1).^2;
 func = feval(f,points(:,1),points(:,2));
 
 m_error = 0;
 minimum = max(func);
 j = 1;
-while(m_error<2)
+while(m_error<0.1)
 
 points = bwidth.*fullfact([nbins,nbins]);
 points(:,1) = points(:,1)+(mid(1)-mean(points(:,1)));
@@ -101,7 +101,7 @@ coeffs = regress(func, horzcat(points(:,1), points(:,2), ones(length(points))));
 estimates = coeffs(1)*points(:,1) + coeffs(2)*points(:,2) + coeffs(3);
 actuals = feval(f,points(:,1),points(:,2));
 
-error = (estimates-actuals)/actuals;
+error = (estimates-actuals)./actuals;
 
 %choose minimum based on least error of linear regression...if error is
 %anything higher, the line needs to be shifted
@@ -121,35 +121,37 @@ end
 
 end
 
-% j = 1;
-% while(j <= num_runs && sum(abs(min_rsm-true_val))>0.02)
-%     
-%     
-%     
-%     
-%     
-%     
-%     points = ccdesign(2) + min_rsm;
+clear points;
+while(j <= num_runs && sum(abs(min_rsm-true_val))>0.02)
+    
+    
+    
+    
+    
+    points = ccdesign(2);
+    points(:,1) = points(:,1) + (mid(1)-mean(points(:,1)));
+    points(:,2) = points(:,2) + (mid(2)-mean(points(:,2)));
+
 %     %f = @(x1,x2)(1.5-x1+x1.*x2).^2+(2.25-x1+x1.*x2.^2).^2 + (2.625 - x1 + x1.*x2.^3).^2;
 %     f = @(x1,x2) 100.*(x2-x1.^2).^2 + (1-x1).^2;
-% 
-%     func = feval(f,points(:,1),points(:,2));
-%     
-%     polymodel = polyfitn(points, func,2);
-%     poly_s = polyn2sym(polymodel);
-%     
-%     poly_s2 = matlabFunction(poly_s);
-%     coeffs = polymodel.Coefficients;
-%     poly_s = @(x) coeffs(1)*x(1).^2 + coeffs(2)*x(1).*x(2) + coeffs(3)*x(1) + coeffs(4)*x(2).^2 + coeffs(5)*x(2) + coeffs(6);
-%     
-%     [min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[min(points(:,1)),min(points(:,2))],[max(points(:,1)),max(points(:,2))]);    
-%     %[min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[-4.5 -4.5],[4.5 4.5]);    
-% 
-%     min_rsm_p(j,:) = min_rsm;
-%     
-%     j = j+1;
-% end
 
-    figure(1)
+    func = feval(f,points(:,1),points(:,2));
+    
+    polymodel = polyfitn(points, func,2);
+    poly_s = polyn2sym(polymodel);
+    
+    poly_s2 = matlabFunction(poly_s);
+    coeffs = polymodel.Coefficients;
+    poly_s = @(x) coeffs(1)*x(1).^2 + coeffs(2)*x(1).*x(2) + coeffs(3)*x(1) + coeffs(4)*x(2).^2 + coeffs(5)*x(2) + coeffs(6);
+    
+    [min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[min(points(:,1)),min(points(:,2))],[max(points(:,1)),max(points(:,2))]);    
+    %[min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[-4.5 -4.5],[4.5 4.5]);    
+
+    min_rsm_p(j,:) = min_rsm;
+    
+    j = j+1;
+end
+
+    figure(3)
     c = linspace(1,10,num_runs);
     scatter3(min_rsm_p(:,1),min_rsm_p(:,2), fval_rsm(:),'filled');
