@@ -2,7 +2,7 @@
 %BME 695 | Numerical Methods
 %Coding Assignment 2 Problem 2
 
-clear 
+clear
 close all;
 %% Beale Function:
 
@@ -27,7 +27,7 @@ title('Beale Function Surface/Contour Map')
 %% Rosenbrock Function
 
 syms x
-% 
+%
 %Minimize Rosenbrock's fxn using Nelder-Mead
 f = @(x,y) 100.*(y-x.^2).^2 + (1-x).^2;
 %mins = fminsearch(f,[-1.2,1]);
@@ -70,7 +70,7 @@ num_runs = 300;
 %min_rsm = [4,4];
 true_val = [1,1];
 
-%Initial guess -> FF design 
+%Initial guess -> FF design
 %bin-size
 
 bwidth = 0.01;
@@ -83,8 +83,8 @@ points(:,1) = points(:,1)+(mid(1)-mean(points(:,1)));
 points(:,2) = points(:,2)+(mid(2)-mean(points(:,2)));
 
 
-f = @(x1,x2)(1.5-x1+x1.*x2).^2+(2.25-x1+x1.*x2.^2).^2 + (2.625 - x1 + x1.*x2.^3).^2;
-%f = @(x1,x2) 100.*(x2-x1.^2).^2 + (1-x1).^2;
+%f = @(x1,x2)(1.5-x1+x1.*x2).^2+(2.25-x1+x1.*x2.^2).^2 + (2.625 - x1 + x1.*x2.^3).^2;
+f = @(x1,x2) 100.*(x2-x1.^2).^2 + (1-x1).^2;
 func = feval(f,points(:,1),points(:,2));
 
 m_error = 0;
@@ -97,8 +97,8 @@ while(c>0.55)
 
 points = bwidth.*fullfact([nbins,nbins]);
 points(:,1) = points(:,1)+(mid(1)-mean(points(:,1)));
-points(:,2) = points(:,2)+(mid(2)-mean(points(:,2)));    
-    
+points(:,2) = points(:,2)+(mid(2)-mean(points(:,2)));
+
 func = feval(f,points(:,1),points(:,2));
 coeffs = regress(func, horzcat(points(:,1), points(:,2), ones(length(points))));
 
@@ -117,7 +117,7 @@ minima = func(ind);
 
 if(minima<minimum)
     mid = [points(ind,1), points(ind,2)];
-    minimum = minima; 
+    minimum = minima;
     min_rsm_p(j,:) = mid;
     fval_rsm(j) = minimum;
     j = j+1;
@@ -133,33 +133,50 @@ while(j <= num_runs && (d>0.001))
 
     points = ccdesign(2);
     points(:,1) = points(:,1)+(mid(1)-mean(points(:,1)));
-    points(:,2) = points(:,2)+(mid(2)-mean(points(:,2)));       
+    points(:,2) = points(:,2)+(mid(2)-mean(points(:,2)));
 
     func = feval(f,points(:,1),points(:,2));
-    
+
     polymodel = polyfitn(points, func,2);
     poly_s = polyn2sym(polymodel);
-    
+
     poly_s2 = matlabFunction(poly_s);
     coeffs = polymodel.Coefficients;
     poly_s = @(x) coeffs(1)*x(1).^2 + coeffs(2)*x(1).*x(2) + coeffs(3)*x(1) + coeffs(4)*x(2).^2 + coeffs(5)*x(2) + coeffs(6);
-    
+
     [min_rsm, fval_rsm(j)] = fmincon(poly_s,mid,[],[],[],[],[min(points(:,1)),min(points(:,2))],[max(points(:,1)),max(points(:,2))]);
-    
+
     if(fval_rsm(j)<fval_rsm(j-1))
         fval_rsm = fval_rsm(1:(j-1));
         break;
-    end    
-    
+    end
+
     min_rsm_p(j,:) = min_rsm;
 
-    %[min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[-4.5 -4.5],[4.5 4.5]);    
-    
+    %[min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[-4.5 -4.5],[4.5 4.5]);
+
     d = abs(fval_rsm(j)-fval_rsm(j-1))/fval_rsm(j);
 
-    
+
 end
 
-    figure(1)
+    func = feval(f,points(:,1),points(:,2));
+
+    polymodel = polyfitn(points, func,2);
+    poly_s = polyn2sym(polymodel);
+
+    poly_s2 = matlabFunction(poly_s);
+    coeffs = polymodel.Coefficients;
+    poly_s = @(x) coeffs(1)*x(1).^2 + coeffs(2)*x(1).*x(2) + coeffs(3)*x(1) + coeffs(4)*x(2).^2 + coeffs(5)*x(2) + coeffs(6);
+
+    [min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[min(points(:,1)),min(points(:,2))],[max(points(:,1)),max(points(:,2))]);
+    %[min_rsm, fval_rsm(j)] = fmincon(poly_s,min_rsm,[],[],[],[],[-4.5 -4.5],[4.5 4.5]);
+
+    min_rsm_p(j,:) = min_rsm;
+
+    j = j+1;
+end
+
+    figure(3)
     c = linspace(1,10,num_runs);
     scatter3(min_rsm_p(:,1),min_rsm_p(:,2), fval_rsm(:),'filled');
