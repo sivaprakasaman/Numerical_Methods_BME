@@ -1,3 +1,7 @@
+%Andrew Sivaprakasam
+%BME 695 | Numerical Methods
+%Final Exam
+
 clear all
 close all
 
@@ -7,10 +11,28 @@ syms x y
 %need to save as two different function types fo rthis to work
 % fx = @(x)(1.5-x(1)+x(1)*x(2))^2+(2.25-x(1)+x(1)*x(2)^2)^2 + (2.625 - x(1) + x(1)*x(2)^3)^2;;
 % fxy = @(x,y) (1.5-x+x.*y)+(2.25-x+x.*y.^2).^2 + (2.625 - x + x.*y.^3).^2;
-%mid is the start point (see last section of code)
 
-fx = @(x) 100.*(x(2)-x(1).^2).^2 + (1-x(1)).^2;
-fxy = @(x,y) 100.*(y-x.^2).^2 + (1-x).^2;
+
+%mid is the start point (see last section of code)
+% fx = @(x) 100.*(x(2)-x(1).^2).^2 + (1-x(1)).^2;
+% fxy = @(x,y) 100.*(y-x.^2).^2 + (1-x).^2;
+
+%Sphere fxn
+fx = @(x) (x(1)-1)^2 + (x(2)+2)^2
+fxy = @(x,y) (x-1).^2 + (y+2).^2
+
+% %Booth Fxn:
+% fx = @(x) (x(1)+2*x(2)-7)^2 + (2*x(1) + x(2)-5)^2;
+% fxy = @(x,y) (x+2.*y-7).^2 + (2.*x + y-5).^2;
+
+% %Levi Fxn:
+% fx = @(x) sin(3*pi()*x(1))^2 + (1+sin(3*pi()*x(2))^2)*(x(1)-1)^2 + (1+sin(2*pi()*x(2))^2)*(x(2)-1)^2; 
+% fxy = @(x,y) sin(3.*pi().*x).^2 + (1+sin(3.*pi().*y).^2).*(x-1).^2 + (1+sin(2.*pi().*y).^2).*(y-1).^2; 
+
+%% RSM Parameters:
+bwidth = 0.01;
+nbins = 10;
+mid = [-6,-6];
 
 %% Plotting the Surface
 
@@ -41,13 +63,6 @@ num_runs = 705;
 %start point
 %min_rsm = [4,4];
 %true_val = [1,1];
-
-%Initial guess -> FF design 
-%bin-size
-
-bwidth = 0.001;
-nbins = 20;
-mid = [-4,4];
 
 %generate full factorial design
 points = bwidth.*fullfact([nbins,nbins]);
@@ -139,3 +154,4 @@ end
     c = linspace(1,10,num_runs);
     scatter3(min_rsm_p(:,1),min_rsm_p(:,2), fval_rsm(:),'filled');
     set(gca, 'CameraPosition', [-28.753761674980247,-58.83682331833516,941526.1673450879]);
+    min_rsm

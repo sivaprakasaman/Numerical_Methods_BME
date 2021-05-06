@@ -1,0 +1,45 @@
+%Andrew Sivaprakasam
+%BME 695 | Numerical Methods
+%Coding Assignment 3
+
+%% Implement Euler's to solve Lotka Volterra Model:
+
+%essentially derive an exact solution to the model based on previous
+%iteration and hold that for the time dt. 
+
+%obviously this estimate will be poor if dt is large!!
+
+b_1 = 2;
+p_1 = 0.04;
+p_2 = 0.02;
+m_2 = 1.06;
+N1_0 = 100; %pop size
+N2_0 = 15;  % pred pop s
+
+dt = 0.001;
+tmin = 0;
+tmax = 100;
+
+t = (tmin + dt):dt:tmax;
+
+N1 = zeros(1,length(t));
+N2 = zeros(1,length(t));
+
+N1(1) = N1_0;
+N2(1) = N2_0;
+
+for i = 2:length(t)
+    
+    N1(i) = N1(i-1) + (b_1*N1(i-1)-p_1*N1(i-1)*(N2(i-1)))*dt;
+    N2(i) = N2(i-1) + (p_2*N1(i-1)*(N2(i-1))-m_2*N2(i-1))*dt;
+
+end
+
+hold on 
+plot(t,N1,'linewidth',1.5);
+plot(t,N2,'linewidth',1.5);
+
+legend('N1','N2');
+
+%% Model Calibration:
+
