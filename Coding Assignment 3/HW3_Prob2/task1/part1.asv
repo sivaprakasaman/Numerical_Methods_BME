@@ -1,0 +1,23 @@
+
+clear
+close all
+
+observed = readtable('Task1_obs100cycles_det.csv');
+obs(:,1) = table2array(observed(:,2));
+obs(:,2) = table2array(observed(:,3));
+
+l1_0 = 3.15;
+l2_0 = -0.4;
+l3_0 = 8;
+
+alph = 0.0;
+
+params0 = [l1_0,l2_0,l3_0];
+
+options = optimset('MaxFunEvals',10,'MaxIter',10);
+
+params = fminsearch(@(params)simulation_error(obs, params, alph),params0,options);
+
+outputTemp = python('main.py',num2str(params(1)),num2str(params(2)),num2str(params(3))); 
+output = sscanf(outputTemp,'%f'); %
+

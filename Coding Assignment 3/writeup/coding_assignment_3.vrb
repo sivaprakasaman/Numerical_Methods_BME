@@ -1,9 +1,7 @@
-\frametitle{Problem 1 | Lotka-Volterra Model}
-\textbf{Part 1: Questions from Biology Corner}
-\begin{enumerate}
-\item Over time, the grass becomes healthier/greener as rabbit population declines, since less rabbits are there to eat it. Rabbits get more populous with more abundant green grass. Wolves don't survive because the wolf population is so highly dependent on the rabbit population density that when the rabbit population decreases, the large number of wolves cannot survive/mate.
-\item In order to get a stable run for 1000+ iterations, the parameters need to be modified s.t. the wolves clear out just the right amount of rabbits as the grass gets eaten up. I did this by setting Rabbit repo age to \textbf{5}, the wolf repo age to \textbf{15} and wolf repo food level to \textbf{140}.
+\frametitle{Problem 2 | Task 1 Model Calibration}
 
-\includegraphics[width = .7\textwidth]{sim_1000}
-\end{enumerate}
+I used MSE this time as my cost function, trying to minimize error using \verb|fmincon|:
+\vspace{1em}
 
+\centering
+$Error = \alpha MSE_H + (1-\alpha) MSE_{ICU}$

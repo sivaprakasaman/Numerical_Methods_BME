@@ -25,7 +25,7 @@ def P_ij(x, betas):  # args are betas to be input for different sets
     P_table = np.zeros(len(betas) + 1)  # Initialize probability
 #    Compute each component in the exponential term
     for i in range(0, len(betas)):
-        P_comps[i] = P_comp(x[i], betas[i])
+        P_comps[i] = P_comp(x, betas[i])
     P_sum = 1 + sum(P_comps)
     """Create a list of transition probabilities, where the first entry is
     to self, the last entry is to DA

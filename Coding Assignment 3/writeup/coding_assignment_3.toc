@@ -1,2 +1,3 @@
 \beamer@sectionintoc {1}{\insertshorttitle }{1}{0}{1}
 \beamer@sectionintoc {2}{Problem 1}{2}{0}{2}
+\beamer@sectionintoc {3}{Problem 2}{6}{0}{3}

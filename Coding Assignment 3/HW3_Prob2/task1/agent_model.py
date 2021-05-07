@@ -11,14 +11,13 @@ import numpy as np
 
 class Patient:
     """A patient with generated age, and
-    States are E, ER0, ER, HR0, HR,IV0, IV, D
+    States are  E, H, HV,I, IV, DA,DD
     Initialize patient with characteristics and history log"""
 
-    def __init__(self, pid, clock, c_state, df):
+    def __init__(self, pid, clock, covid, c_state, df):
         # set initial char for each patient"""
         self.pid = pid
-        # self.age = age
-        # self.covid = covid
+        self.covid = covid
         self.history = df
         self.clock = clock
         self.c_LOS = 0
@@ -30,10 +29,10 @@ class Patient:
     """Get individual's characteristics"""
 
     def getchar(self):
-        return np.array([1, self.c_LOS])
+        return np.array([1, self.c_LOS, self.covid])
 
-    def setLOS(self, LOS):
-        self.c_LOS = LOS
+    def setLOS(self, los):
+        self.c_LOS = los
     """Update individual's transition history after each transition"""
 
     def update(self, n_state):

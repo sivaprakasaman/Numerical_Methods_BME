@@ -92,6 +92,88 @@
 
 \begin{frame}
 \frametitle{Problem 1 | Lotka-Volterra Model}
+\textbf{\underline{Part 2: Simulate LV Model}}
+\vspace{1em}
+
+The initial, uncalibrated simulation of my model is shown below:
+\vspace{.5em}
+
+\centering
+\includegraphics[width = .9\textwidth]{LV_uncalib}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Problem 1 | Lotka-Volterra Model}
+\textbf{\underline{Part 2: Cost Function Used}}\
+
+I decided to use the sum of the sum of square errors:
+\vspace{1em}
+
+\centering
+$Error = \sum_{j = 1}^{k = 2}\sum_{i = 1}^{length(N_j)}(N_j-Obs_j)^2$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Problem 1 | Lotka-Volterra Model}
+\textbf{\underline{Part 2: Calibrate LV Model}}
+\vspace{1em}
+
+The calibrated simulation of my model is shown below:
+\vspace{.5em}
+
+\centering
+\includegraphics[width = .9\textwidth]{LV_calib} \\
+\textit{Note: the datatips match the observed data.}
+
+\end{frame}
+
+\section{Problem 2}
+\begin{frame}[fragile]
+\frametitle{Problem 2 | Task 1 Model Calibration}
+
+I used MSE this time as my cost function, trying to minimize error using \verb|fmincon|:
+\vspace{1em}
+
+\centering
+$Error = \alpha MSE_H + (1-\alpha) MSE_{ICU}$
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Problem 2 | Task 1 Model Calibration}
+
+My calibration accuracy depends on the alpha value, as this weights the cost function either towards a better calibration for H or ICU. Here alpha = 0, so the calibration is weighted entirely towards ICU:
+
+\centering
+\includegraphics[width = .44\textwidth]{H_alph0_30}
+\includegraphics[width = .45\textwidth]{ICU_alph0_30}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Problem 2 | Task 1 Model Calibration}
+
+This data can also be visualized using histograms.
+\vspace{1em}
+
+\centering
+\includegraphics[width = .45\textwidth]{H_alph0_30_h}
+\includegraphics[width = .45\textwidth]{ICU_alph0_30_h}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Problem 2 | Task 1 Model Calibration}
+
+Additionally, alpha can be varied to adjust our callibration. Note how ICU calibration is worse than two slides prior...
+
+\vspace{1em}
+
+\centering
+\includegraphics[width = .45\textwidth]{H_alph25_30}
+\includegraphics[width = .45\textwidth]{ICU_alph25_30}
 
 \end{frame}
 

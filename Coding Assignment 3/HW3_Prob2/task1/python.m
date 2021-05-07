@@ -76,7 +76,15 @@ end
 cmdString = ['python' cmdString];
 if ispc && ~isdeployed
     % Add python to the path
-    pythonInst = fullfile(matlabroot, 'sys\python\win32\bin\');
+%     pythonInst = fullfile(matlabroot, 'sys\python\win32\bin\');
+    [~,a,~] = pyversion;
+    if endsWith(a,'.EXE')
+        pythonInst = erase(a,"python.EXE");
+    elseif endsWith(a,'.exe')
+        pythonInst = erase(a,"python.exe");  
+    else
+        pythonInst = a;
+    end
     cmdString = ['set PATH=',pythonInst, ';%PATH%&' cmdString];
 end
 [status, result] = system(cmdString);

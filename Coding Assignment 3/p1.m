@@ -41,7 +41,9 @@ end
 hold on 
 plot(t,N1,'linewidth',1.5);
 plot(t,N2,'linewidth',1.5);
-
+title('Uncalibrated Lotka Volterra Model');
+xlabel('Time (yrs)');
+ylabel('Population');
 legend('N1','N2');
 
 %% Model Calibration:
@@ -66,7 +68,12 @@ end
 
 figure;
 hold on 
-plot(t,N1,'linewidth',1.5);
-plot(t,N2,'linewidth',1.5);
+h1 = plot(t,N1,'linewidth',1.5);
+datatip(h1, obs_t,obs_N12(1));
+h2 = plot(t,N2,'linewidth',1.5);
+datatip(h2,obs_t,obs_N12(2));
 legend('N1','N2');
+title('Calibrated Lotka Volterra Model');
+xlabel('Time (yrs)');
+ylabel('Population');
 hold off
