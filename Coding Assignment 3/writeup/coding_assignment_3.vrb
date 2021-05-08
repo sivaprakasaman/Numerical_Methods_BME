@@ -1,7 +1,11 @@
-\frametitle{Problem 2 | Task 1 Model Calibration}
+\frametitle{Problem 2 | Task 2 Model Calibration}
 
-I used MSE this time as my cost function, trying to minimize error using \verb|fmincon|:
+\footnotesize{It can be clearly seen above that calibration improved the
+ICU representation. Here is the output of my cost function over 2 iterations. Note how the MSE drops substantially when parameters are varied. The exact $l_1, l_2, l_3$ parameters the calibration chose is found in the \verb|params| vector after running my \verb|part1.m| and \verb|part2.m| scripts:}
+
+
 \vspace{1em}
 
 \centering
-$Error = \alpha MSE_H + (1-\alpha) MSE_{ICU}$
+\includegraphics[width = .65\textwidth]{cost}\\
+

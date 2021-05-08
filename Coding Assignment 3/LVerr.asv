@@ -1,8 +1,0 @@
-function err = LVerr(obs_t, obs_N12, params, inits)
-
-[t,y] = ode45(@(t,N)LV(t,N,params),obs_t,inits);
-
-err = sum((sum(
-
-end
-

@@ -9,8 +9,8 @@ syms x y
 %% Enter function here:
 
 %need to save as two different function types fo rthis to work
-% fx = @(x)(1.5-x(1)+x(1)*x(2))^2+(2.25-x(1)+x(1)*x(2)^2)^2 + (2.625 - x(1) + x(1)*x(2)^3)^2;;
-% fxy = @(x,y) (1.5-x+x.*y)+(2.25-x+x.*y.^2).^2 + (2.625 - x + x.*y.^3).^2;
+fx = @(x)(1.5-x(1)+x(1)*x(2))^2+(2.25-x(1)+x(1)*x(2)^2)^2 + (2.625 - x(1) + x(1)*x(2)^3)^2;;
+fxy = @(x,y) (1.5-x+x.*y)+(2.25-x+x.*y.^2).^2 + (2.625 - x + x.*y.^3).^2;
 
 
 %mid is the start point (see last section of code)
@@ -27,13 +27,13 @@ syms x y
 % fxy = @(x,y) (x+2.*y-7).^2 + (2.*x + y-5).^2;
 
 % %Levi Fxn:
-fx = @(x) sin(3*pi()*x(1))^2 + (1+sin(3*pi()*x(2))^2)*(x(1)-1)^2 + (1+sin(2*pi()*x(2))^2)*(x(2)-1)^2; 
-fxy = @(x,y) sin(3.*pi().*x).^2 + (1+sin(3.*pi().*y).^2).*(x-1).^2 + (1+sin(2.*pi().*y).^2).*(y-1).^2; 
+% fx = @(x) sin(3*pi()*x(1))^2 + (1+sin(3*pi()*x(2))^2)*(x(1)-1)^2 + (1+sin(2*pi()*x(2))^2)*(x(2)-1)^2; 
+% fxy = @(x,y) sin(3.*pi().*x).^2 + (1+sin(3.*pi().*y).^2).*(x-1).^2 + (1+sin(2.*pi().*y).^2).*(y-1).^2; 
 
 %% RSM Parameters:
 bwidth = 0.01;
 nbins = 10;
-mid = [1,1];
+mid = [2,2];
 
 %% Plotting the Surface
 

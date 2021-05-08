@@ -28,9 +28,13 @@ parfor i = 1:30
 end
 
 
+%% Normality Assumption:
 
-
-
+qqplot(output(:,1))
+title('QQ Plot of H - Model Data')
+figure;
+qqplot(output(:,2))
+title('QQ Plot of ICU - Model Data')
 
 
 

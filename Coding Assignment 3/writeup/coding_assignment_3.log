@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.4.18)  7 MAY 2021 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.4.18)  7 MAY 2021 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -942,7 +942,7 @@ Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 <./Figures/LV_calib.png, id=80, 649.67719pt x 280.04625pt>
 File: ./Figures/LV_calib.png Graphic file (type png)
 <use ./Figures/LV_calib.png>
-Package pdftex.def Info: ./Figures/LV_calib.png  used on input line 130.
+Package pdftex.def Info: ./Figures/LV_calib.png  used on input line 129.
 (pdftex.def)             Requested size: 358.50229pt x 154.53441pt.
 
 Overfull \hbox (1.41669pt too wide) has occurred while \output is active
@@ -972,16 +972,26 @@ Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 [6
 
 ]
-<./Figures/H_alph0_30.png, id=95, 414.04688pt x 320.69812pt>
-File: ./Figures/H_alph0_30.png Graphic file (type png)
-<use ./Figures/H_alph0_30.png>
-Package pdftex.def Info: ./Figures/H_alph0_30.png  used on input line 153.
-(pdftex.def)             Requested size: 175.26994pt x 135.75905pt.
-<./Figures/ICU_alph0_30.png, id=96, 421.575pt x 316.18124pt>
-File: ./Figures/ICU_alph0_30.png Graphic file (type png)
-<use ./Figures/ICU_alph0_30.png>
-Package pdftex.def Info: ./Figures/ICU_alph0_30.png  used on input line 153.
-(pdftex.def)             Requested size: 179.25114pt x 134.44037pt.
+<./Figures/1h_uncal.png, id=95, 421.575pt x 316.18124pt>
+File: ./Figures/1h_uncal.png Graphic file (type png)
+<use ./Figures/1h_uncal.png>
+Package pdftex.def Info: ./Figures/1h_uncal.png  used on input line 156.
+(pdftex.def)             Requested size: 119.50279pt x 89.6253pt.
+<./Figures/1h_cal.png, id=96, 421.575pt x 316.18124pt>
+File: ./Figures/1h_cal.png Graphic file (type png)
+<use ./Figures/1h_cal.png>
+Package pdftex.def Info: ./Figures/1h_cal.png  used on input line 156.
+(pdftex.def)             Requested size: 119.50279pt x 89.6253pt.
+<./Figures/1ICU_uncal.png, id=97, 414.04688pt x 320.69812pt>
+File: ./Figures/1ICU_uncal.png Graphic file (type png)
+<use ./Figures/1ICU_uncal.png>
+Package pdftex.def Info: ./Figures/1ICU_uncal.png  used on input line 156.
+(pdftex.def)             Requested size: 119.50279pt x 92.55965pt.
+<./Figures/1ICU_cal.png, id=98, 429.10312pt x 311.66437pt>
+File: ./Figures/1ICU_cal.png Graphic file (type png)
+<use ./Figures/1ICU_cal.png>
+Package pdftex.def Info: ./Figures/1ICU_cal.png  used on input line 156.
+(pdftex.def)             Requested size: 127.47125pt x 92.5822pt.
 
 Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 []  
@@ -994,17 +1004,13 @@ Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 
 [7
 
- <./Figures/H_alph0_30.png (PNG copy)> <./Figures/ICU_alph0_30.png (PNG copy)>]
-<./Figures/H_alph0_30_h.png, id=104, 421.575pt x 316.18124pt>
-File: ./Figures/H_alph0_30_h.png Graphic file (type png)
-<use ./Figures/H_alph0_30_h.png>
-Package pdftex.def Info: ./Figures/H_alph0_30_h.png  used on input line 165.
-(pdftex.def)             Requested size: 179.25114pt x 134.44037pt.
-<./Figures/ICU_alph0_30_h.png, id=105, 421.575pt x 316.18124pt>
-File: ./Figures/ICU_alph0_30_h.png Graphic file (type png)
-<use ./Figures/ICU_alph0_30_h.png>
-Package pdftex.def Info: ./Figures/ICU_alph0_30_h.png  used on input line 165.
-(pdftex.def)             Requested size: 179.25114pt x 134.44037pt.
+ <./Figures/1h_uncal.png (PNG copy)> <./Figures/1h_cal.png (PNG copy)> <./Figur
+es/1ICU_uncal.png (PNG copy)> <./Figures/1ICU_cal.png (PNG copy)>]
+<./Figures/cost1.png, id=106, 474.27188pt x 284.56313pt>
+File: ./Figures/cost1.png Graphic file (type png)
+<use ./Figures/cost1.png>
+Package pdftex.def Info: ./Figures/cost1.png  used on input line 169.
+(pdftex.def)             Requested size: 258.91765pt x 155.3552pt.
 
 Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 []  
@@ -1017,18 +1023,27 @@ Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 
 [8
 
- <./Figures/H_alph0_30_h.png (PNG copy)> <./Figures/ICU_alph0_30_h.png (PNG cop
-y)>]
-<./Figures/H_alph25_30.png, id=111, 414.04688pt x 320.69812pt>
-File: ./Figures/H_alph25_30.png Graphic file (type png)
-<use ./Figures/H_alph25_30.png>
-Package pdftex.def Info: ./Figures/H_alph25_30.png  used on input line 178.
-(pdftex.def)             Requested size: 179.25114pt x 138.84193pt.
-<./Figures/ICU_alph25_30.png, id=112, 429.10312pt x 311.66437pt>
-File: ./Figures/ICU_alph25_30.png Graphic file (type png)
-<use ./Figures/ICU_alph25_30.png>
-Package pdftex.def Info: ./Figures/ICU_alph25_30.png  used on input line 178.
-(pdftex.def)             Requested size: 179.25114pt x 130.1943pt.
+ <./Figures/cost1.png (PNG copy)>]
+<./Figures/2_H_uncalib.png, id=115, 414.04688pt x 320.69812pt>
+File: ./Figures/2_H_uncalib.png Graphic file (type png)
+<use ./Figures/2_H_uncalib.png>
+Package pdftex.def Info: ./Figures/2_H_uncalib.png  used on input line 183.
+(pdftex.def)             Requested size: 119.50279pt x 92.55965pt.
+<./Figures/2_H_calib.png, id=116, 414.04688pt x 320.69812pt>
+File: ./Figures/2_H_calib.png Graphic file (type png)
+<use ./Figures/2_H_calib.png>
+Package pdftex.def Info: ./Figures/2_H_calib.png  used on input line 183.
+(pdftex.def)             Requested size: 119.50279pt x 92.55965pt.
+<./Figures/2_ICU_uncalib.png, id=117, 429.10312pt x 311.66437pt>
+File: ./Figures/2_ICU_uncalib.png Graphic file (type png)
+<use ./Figures/2_ICU_uncalib.png>
+Package pdftex.def Info: ./Figures/2_ICU_uncalib.png  used on input line 183.
+(pdftex.def)             Requested size: 119.50279pt x 86.79462pt.
+<./Figures/2_ICU_calib.png, id=118, 429.10312pt x 311.66437pt>
+File: ./Figures/2_ICU_calib.png Graphic file (type png)
+<use ./Figures/2_ICU_calib.png>
+Package pdftex.def Info: ./Figures/2_ICU_calib.png  used on input line 183.
+(pdftex.def)             Requested size: 119.50279pt x 86.79462pt.
 
 Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 []  
@@ -1041,8 +1056,29 @@ Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 
 [9
 
- <./Figures/H_alph25_30.png (PNG copy)> <./Figures/ICU_alph25_30.png (PNG copy)
->]
+ <./Figures/2_H_uncalib.png (PNG copy)> <./Figures/2_H_calib.png (PNG copy)> <.
+/Figures/2_ICU_uncalib.png (PNG copy)> <./Figures/2_ICU_calib.png (PNG copy)>]
+\openout4 = `coding_assignment_3.vrb'.
+
+ (./coding_assignment_3.vrb
+<./Figures/cost.png, id=125, 451.6875pt x 298.11375pt>
+File: ./Figures/cost.png Graphic file (type png)
+<use ./Figures/cost.png>
+Package pdftex.def Info: ./Figures/cost.png  used on input line 10.
+(pdftex.def)             Requested size: 258.91765pt x 170.89551pt.
+)
+Overfull \hbox (1.41669pt too wide) has occurred while \output is active
+[]  
+ []
+
+
+Overfull \hbox (1.41669pt too wide) has occurred while \output is active
+[]  
+ []
+
+[10
+
+ <./Figures/cost.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `coding_assignment_3.nav'.
 
@@ -1052,40 +1088,44 @@ Overfull \hbox (1.41669pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `coding_assignment_3.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
  (./coding_assignment_3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `coding_assignment_3.out' has not changed.
 (rerunfilecheck)             Checksum: 84C1498457829BBF4A21BC78AC7B07EA;88.
  ) 
 Here is how much of TeX's memory you used:
- 19048 strings out of 482736
- 359667 string characters out of 5954139
+ 19103 strings out of 482736
+ 360497 string characters out of 5954139
  611848 words of memory out of 5000000
- 33889 multiletter control sequences out of 15000+600000
- 544187 words of font info for 64 fonts, out of 8000000 for 9000
+ 33933 multiletter control sequences out of 15000+600000
+ 546475 words of font info for 73 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  59i,18n,62p,786b,623s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-sbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on coding_assignment_3.pdf (9 pages, 322070 bytes).
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on coding_assignment_3.pdf (10 pages, 387258 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -26,7 +26,7 @@ end
 
 ind = obs_t/dt;
 
-err = sum(sum(([N1(ind);N2(ind)]-obs_N12).^2));
+err = sum(([N1(ind);N2(ind)]-obs_N12).^2);
 
 end
 

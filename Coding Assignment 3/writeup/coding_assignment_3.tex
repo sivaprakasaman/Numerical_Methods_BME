@@ -110,8 +110,7 @@ The initial, uncalibrated simulation of my model is shown below:
 I decided to use the sum of the sum of square errors:
 \vspace{1em}
 
-\centering
-$Error = \sum_{j = 1}^{k = 2}\sum_{i = 1}^{length(N_j)}(N_j-Obs_j)^2$
+\[ Error = \sum_{i = 1}^{len(N_1)}(N_{1(i)}-Obs_{(i)})^2  +  \sum_{j = 1}^{len(N_2)}(N_{2(j)}-Obs_{(j)})^2\]
 
 \end{frame}
 
@@ -137,43 +136,63 @@ I used MSE this time as my cost function, trying to minimize error using \verb|f
 \vspace{1em}
 
 \centering
-$Error = \alpha MSE_H + (1-\alpha) MSE_{ICU}$
+\[ Error = \alpha MSE_H + (1-\alpha) MSE_{ICU} \]
 \end{frame}
+
 
 
 \begin{frame}
 \frametitle{Problem 2 | Task 1 Model Calibration}
 
-My calibration accuracy depends on the alpha value, as this weights the cost function either towards a better calibration for H or ICU. Here alpha = 0, so the calibration is weighted entirely towards ICU:
-
-\centering
-\includegraphics[width = .44\textwidth]{H_alph0_30}
-\includegraphics[width = .45\textwidth]{ICU_alph0_30}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Problem 2 | Task 1 Model Calibration}
-
-This data can also be visualized using histograms.
+The calibration can be visualized using histograms. $\alpha$ was chosen to be .75 in order to bias the calibration towards H.
 \vspace{1em}
 
 \centering
-\includegraphics[width = .45\textwidth]{H_alph0_30_h}
-\includegraphics[width = .45\textwidth]{ICU_alph0_30_h}
+\includegraphics[width = .3\textwidth]{1h_uncal}
+\includegraphics[width = .3\textwidth]{1h_cal}\\
+\includegraphics[width = .3\textwidth]{1ICU_uncal}
+\includegraphics[width = .32\textwidth]{1ICU_cal}\\
 
 \end{frame}
 
 \begin{frame}
 \frametitle{Problem 2 | Task 1 Model Calibration}
 
-Additionally, alpha can be varied to adjust our callibration. Note how ICU calibration is worse than two slides prior...
+\footnotesize{It should be noted that in the above slide, the calibration appears to have worsened the ICU distribution match, while ever so slightly improving the H match. My guess is in this part, the output of the model (a 1 $\times$ 200) matrix only reflected a set of ICU values, hence the overlap in the distributions. The H values outputted were just too low and could not be calibrated. Here is how the optimization went:}
+\vspace{1em}
+
+\centering
+\includegraphics[width = .65\textwidth]{cost1}\\
+
+\textit{Note: The high SSE is not sufficiently reduced over 12 iterations.}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Problem 2 | Task 2 Model Calibration}
+
+The calibration can be visualized similarly using histograms. The same cost function in Part 1 was used. $\alpha$ was chosen to be .5 in order to evenly weight the calibration.
+\vspace{1em}
+
+\centering
+\includegraphics[width = .3\textwidth]{2_H_uncalib}
+\includegraphics[width = .3\textwidth]{2_H_calib}\\
+\includegraphics[width = .3\textwidth]{2_ICU_uncalib}
+\includegraphics[width = .3\textwidth]{2_ICU_calib}\\
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Problem 2 | Task 2 Model Calibration}
+
+\footnotesize{It can be clearly seen above that calibration improved the 
+ICU representation. Here is the output of my cost function over 2 iterations. Note how the MSE drops substantially when parameters are varied. The exact $l_1, l_2, l_3$ parameters the calibration chose is found in the \verb|params| vector after running my \verb|part1.m| and \verb|part2.m| scripts:}
+
 
 \vspace{1em}
 
 \centering
-\includegraphics[width = .45\textwidth]{H_alph25_30}
-\includegraphics[width = .45\textwidth]{ICU_alph25_30}
+\includegraphics[width = .65\textwidth]{cost}\\
 
 \end{frame}
 
